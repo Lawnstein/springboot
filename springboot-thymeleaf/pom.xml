@@ -2,60 +2,44 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.uu.husky</groupId>
-  <artifactId>springboot-mybatis</artifactId>
+  <artifactId>springboot-thymeleaf</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>springboot-mybatis Maven Webapp</name>
+  <name>springboot-thymeleaf Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
-
+  <!--包含了大量的默认注解，极大的简化了开发-->
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>1.5.2.RELEASE</version>
   </parent>
-  <dependencies>
 
-  <!--web  整合包-->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter</artifactId>
-    </dependency>
+  <properties>
+    <java.version>1.8</java.version>
+  </properties>
+  <!--web  配置 -->
+  <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-
-    <!--test -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-test</artifactId>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
     </dependency>
-
-    <!-- spring-boot mybatis依赖  MySQL-->
     <dependency>
-      <groupId>org.mybatis.spring.boot</groupId>
-      <artifactId>mybatis-spring-boot-starter</artifactId>
-      <version>1.3.0</version>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
     </dependency>
-
-
-
-    <!--热启动-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
       <optional>true</optional>
-    </dependency>
-
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>1.16.10</version>
     </dependency>
   </dependencies>
 
@@ -72,16 +56,9 @@
           <fork>true</fork>
         </configuration>
       </plugin>
-      <!--mybatis 插件  -->
-      <plugin>
-        <groupId>com.uu.husky</groupId>
-        <artifactId>mybatis-plugin</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <configuration>
-          <configFilePath>src/main/resources/mybatis-generator.xml</configFilePath>
-        </configuration>
-      </plugin>
-
     </plugins>
   </build>
+
+
+
 </project>
