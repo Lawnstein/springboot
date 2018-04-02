@@ -1,12 +1,16 @@
 package com.uu.husky;
 
-import com.uu.husky.dao.UserDao;
-import com.uu.husky.domain.User;
+import com.uu.ApplicationStart;
+import com.uu.dao.UserMapper;
+import com.uu.domain.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 描述：
@@ -15,20 +19,27 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @create 2018-03-19 11:12
  **/
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = ApplicationStart.class)
 public class UserDaoTest {
 
     @Autowired
-    private UserDao userDao;
+    private UserMapper userDao;
 
     @Test
-    public void testInsert(){
+    public void testInsert() {
         User user = new User();
-        user.setId(13l);
-        user.setAge(12);
-        user.setNickName("小红");
-        user.setEmail("@16.com");
-        user.setRegTime("dd");
-        userDao.insertSelective(user);
+        user.setAges(11);
+        user.setPassword("不知道1");
+
+        User user1 = new User();
+        user1.setAges(11);
+        user1.setPassword("不知道1");
+
+
+        List<User> users = new ArrayList<User>();
+        users.add(user);
+        users.add(user1);
+        int i = userDao.batchSave(users);
+
     }
 }

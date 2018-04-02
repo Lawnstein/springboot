@@ -41,9 +41,22 @@
       <artifactId>spring-boot-devtools</artifactId>
       <optional>true</optional>
     </dependency>
+    <!-- 切面编程-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-aop</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId></groupId>
+      <artifactId></artifactId>
+    </dependency>
+
   </dependencies>
 
 
+
+  <!-- ===================== 插件 ======================== -->
   <build>
     <finalName>${project.artifactId}</finalName>
 
