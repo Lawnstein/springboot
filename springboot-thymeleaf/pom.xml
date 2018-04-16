@@ -47,11 +47,6 @@
       <artifactId>spring-boot-starter-aop</artifactId>
     </dependency>
 
-    <dependency>
-      <groupId></groupId>
-      <artifactId></artifactId>
-    </dependency>
-
   </dependencies>
 
 

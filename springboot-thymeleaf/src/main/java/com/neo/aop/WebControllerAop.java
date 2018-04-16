@@ -1,5 +1,6 @@
 package com.neo.aop;
 
+
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -22,7 +23,7 @@ public class WebControllerAop {
     }
 
     @Before("executeService()")
-    public void doBeforeAdvice(ProcedingJoinPoint joinPoint){
+    public void doBeforeAdvice(JoinPoint joinPoint){
          System.out.println("前置通知--- + " + joinPoint.getSignature().getName()   );
     }
 
