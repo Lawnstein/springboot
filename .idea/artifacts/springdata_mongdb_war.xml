@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springdata-mongdb:war">
+    <output-path>$PROJECT_DIR$/springdata-mongdb/target</output-path>
+    <root id="archive" name="springdata-mongdb-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="springdata-mongdb:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/springboot-docker" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-login" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-thymeleaf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springdata-mongdb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springdata-scheduling" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springdata-web" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
