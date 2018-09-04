@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="springboot-docker:war">
-    <output-path>$PROJECT_DIR$/springboot-docker/target</output-path>
-    <root id="archive" name="springboot-docker-1.0-SNAPSHOT.war">
-      <element id="artifact" artifact-name="springboot-docker:war exploded" />
-    </root>
-  </artifact>
-</component>

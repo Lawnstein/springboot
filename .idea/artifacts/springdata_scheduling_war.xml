@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="springdata-scheduling:war">
-    <output-path>$PROJECT_DIR$/springdata-scheduling/target</output-path>
-    <root id="archive" name="springdata-scheduling.war">
-      <element id="artifact" artifact-name="springdata-scheduling:war exploded" />
-    </root>
-  </artifact>
-</component>
