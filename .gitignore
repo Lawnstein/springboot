@@ -1,3 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
 /springboot-login/target/
 /springboot-login/springboot-thymeleaf.iml
+/springboot.iml
+/springboot-login/springboot-login.iml
