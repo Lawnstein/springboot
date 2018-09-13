@@ -9,7 +9,7 @@
     <name>springboot-docker-dockerfile</name>
     <groupId>com.uu.husky</groupId>
     <artifactId>springboot-docker-dockerfile</artifactId>
-    <version>1.0.0</version>
+    <version>2.0.0</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -49,7 +49,7 @@
                 <version>1.0.0</version>
                 <configuration>
                     <!-- imageName 仓库名称/镜像名称:标签名称-->
-                    <imageName>${docker.image.prefix}/${project.artifactId}:1.0.0</imageName>
+                    <imageName>${docker.image.prefix}/${project.artifactId}:${version}</imageName>
                     <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
 
                     <resources>
