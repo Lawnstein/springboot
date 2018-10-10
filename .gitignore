@@ -9,3 +9,5 @@
 /springboot-docker-dockerfile/target/
 /springboot-docker-dockerfile/springboot-docker-dockerfile.iml
 /dockercompose-springboot-mysql-nginx/app/dockercompose-springboot-mysql-nginx.iml
+/springboot-quartz/target/
+
