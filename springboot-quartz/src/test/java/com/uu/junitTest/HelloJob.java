@@ -24,10 +24,16 @@ public class HelloJob implements Job {
      */
     public void execute(JobExecutionContext context) throws JobExecutionException {
         JobDataMap jobDataMap = context.getJobDetail().getJobDataMap();
+
         String name = jobDataMap.get("name").toString();
         String characteristic = jobDataMap.get("characteristic").toString();
 
+        JobDataMap mergedJobDataMap = context.getMergedJobDataMap();
+        String mergedName = mergedJobDataMap.getString("name");
+
         System.out.println("name : " + name);
+        System.out.println("mergedName:" + mergedName);
+
         System.out.println("characteristic : " + characteristic);
 
     }

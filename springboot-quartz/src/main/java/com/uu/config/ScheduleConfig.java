@@ -14,28 +14,28 @@ import java.util.Properties;
  * 定时任务配置
  *
  * @author Administrator
- *
  */
 @Configuration
 public class ScheduleConfig {
 
-	@Bean
-	public SchedulerFactoryBean schedulerFactoryBean(DataSource dataSource) throws IOException {
-		SchedulerFactoryBean factory = new SchedulerFactoryBean();
-		factory.setDataSource(dataSource);
+    @Bean
+    public SchedulerFactoryBean schedulerFactoryBean(DataSource dataSource) throws IOException {
+        SchedulerFactoryBean factory = new SchedulerFactoryBean();
+        factory.setDataSource(dataSource);
 
-		// quartz参数
-		factory.setQuartzProperties(quartzProperties());
 
-		factory.setSchedulerName("MyScheduler");
-		// 延时启动
-		factory.setStartupDelay(1);
-		factory.setApplicationContextSchedulerContextKey("applicationContextKey");
-		// 可选，QuartzScheduler
-		// 启动时更新己存在的Job，这样就不用每次修改targetObject后删除qrtz_job_details表对应记录了
-		factory.setOverwriteExistingJobs(true);
-		// 设置自动启动，默认为true
-		factory.setAutoStartup(true);
+        // quartz参数
+        factory.setQuartzProperties(quartzProperties());
+
+        factory.setSchedulerName("MyScheduler");
+        // 延时启动
+        factory.setStartupDelay(1);
+        factory.setApplicationContextSchedulerContextKey("applicationContextKey");
+        // 可选，QuartzScheduler
+        // 启动时更新己存在的Job，这样就不用每次修改targetObject后删除qrtz_job_details表对应记录了
+        factory.setOverwriteExistingJobs(true);
+        // 设置自动启动，默认为true
+        factory.setAutoStartup(true);
 
 
 		/*
@@ -48,25 +48,25 @@ public class ScheduleConfig {
 		factory.setTriggers(cronTriggerFactoryBean.getObject());
 		*/
 
-		return factory;
-	}
+        return factory;
+    }
 
-	/**
-	 * 加载Quartz配置
-	 *
-	 * @return
-	 * @throws IOException
-	 */
-	@Bean
-	public Properties quartzProperties() throws IOException {
-		//使用Spring的PropertiesFactoryBean对属性配置文件进行管理
-		PropertiesFactoryBean propertiesFactoryBean = new PropertiesFactoryBean();
-		//注意：quartz的配置文件从指定系统目录中获取，而不是从classpath中获取
-		propertiesFactoryBean.setLocation(new ClassPathResource("/quartz.properties"));
-		//propertiesFactoryBean.setLocation(new FileSystemResource(propertiesPath));
-		//重要：保证其初始化
-		propertiesFactoryBean.afterPropertiesSet();
-		return propertiesFactoryBean.getObject();
-	}
+    /**
+     * 加载Quartz配置
+     *
+     * @return
+     * @throws IOException
+     */
+    @Bean
+    public Properties quartzProperties() throws IOException {
+        //使用Spring的PropertiesFactoryBean对属性配置文件进行管理
+        PropertiesFactoryBean propertiesFactoryBean = new PropertiesFactoryBean();
+        //注意：quartz的配置文件从指定系统目录中获取，而不是从classpath中获取
+        propertiesFactoryBean.setLocation(new ClassPathResource("/quartz.properties"));
+        //propertiesFactoryBean.setLocation(new FileSystemResource(propertiesPath));
+        //重要：保证其初始化
+        propertiesFactoryBean.afterPropertiesSet();
+        return propertiesFactoryBean.getObject();
+    }
 
 }

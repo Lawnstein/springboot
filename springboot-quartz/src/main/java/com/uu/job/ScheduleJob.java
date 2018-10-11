@@ -16,25 +16,18 @@ public class ScheduleJob extends QuartzJobBean {
 
     @Override
     protected void executeInternal(JobExecutionContext context) {
-        long startTime = System.currentTimeMillis();
 
         try {
             // 执行任务
-            System.out.println("-------任务开始执行吃饭任务----------");
-            Thread.sleep(2000);
+            System.out.println("-------执行吃饭任务----------");
 
             logger.info("吃饭中。。。。。。。");
-
-            long times = System.currentTimeMillis() - startTime;
+            Thread.sleep(2000);
 
             logger.info("吃完饭了。。。。。。");
 
         } catch (Exception e) {
             logger.error("任务执行失败，任务ID：");
-            long times = System.currentTimeMillis() - startTime;
-            // 任务状态 0：成功 1：失败
-        } finally {
-
         }
     }
 }

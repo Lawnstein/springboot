@@ -27,32 +27,35 @@ public class QuartzTest {
 
         // 定义job,绑定我们的定时任务
         JobDetail job2 = newJob(HelloJob.class)
-                .usingJobData("name", "张三")
-                .usingJobData("characteristic", "帅3")
+                .usingJobData("name", "李四")
+                .usingJobData("characteristic", "22")
                 .build();
 
         // 执行任务，用定义好的触发器 和 任务
-        scheduler.scheduleJob(job2, getTrigger6());
+        scheduler.scheduleJob(job2, getTrigger1());
 
     }
 
     /**
      * 触发器立即触发，然后每隔2秒 触发一次，22:55:00：
      */
-    private static Trigger getTrigger1() {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+    private static SimpleTrigger getTrigger1() {
+
+        SimpleScheduleBuilder simpleScheduleBuilder = SimpleScheduleBuilder.simpleSchedule()
+                .withIntervalInSeconds(2)
+                //.withRepeatCount(0)
+                .repeatForever();
 
         //定义一个任务触发器
-        return newTrigger()
+        return TriggerBuilder.newTrigger()
+                .withIdentity(TriggerKey.triggerKey(""))
                 .withIdentity("job2", "group2")
                 //定点触发
                 //.startAt(sdf.parse("2018-09-27 10:27:00"))
                 // 五秒钟后触发
                 .startAt(DateBuilder.futureDate(5, DateBuilder.IntervalUnit.SECOND))
-                .withSchedule(simpleSchedule()
-                        .withIntervalInSeconds(2)
-                        .repeatForever())
-                //.withRepeatCount(0))
+                .withSchedule(simpleScheduleBuilder)
+                .usingJobData("name", "😝，，")
                 .endAt(DateBuilder.dateOf(22, 55, 0))
                 .build();
     }
@@ -60,7 +63,7 @@ public class QuartzTest {
     /**
      * 触发器 2018-09-27 10:27:00 定点触发，重复0次
      */
-    private static Trigger getTrigger2() throws ParseException {
+    private static SimpleTrigger getTrigger2() throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 
         //定义一个任务触发器
@@ -70,16 +73,15 @@ public class QuartzTest {
                 .startAt(sdf.parse("2018-09-27 10:27:00"))
                 .withSchedule(simpleSchedule()
                         .withIntervalInSeconds(2)
-                        .repeatForever()
-                        .withRepeatCount(0))
-                .build();
+                        .withRepeatCount(0)
+                ).build();
 
     }
 
     /**
      * 触发器 在下一个整点小时触发，然后每隔2小时触发一次，永不停歇：次
      */
-    private static Trigger getTrigger3() throws ParseException {
+    private static SimpleTrigger getTrigger3() throws ParseException {
         //定义一个任务触发器
         return newTrigger()
                 .withIdentity("job1", "group1")
@@ -88,14 +90,14 @@ public class QuartzTest {
                 .withSchedule(simpleSchedule()
                         .withIntervalInSeconds(2)
                         .repeatForever()
-                        .withRepeatCount(0))
+                )
                 .build();
     }
 
     /**
      * 触发器，每天从下午15点到下午16点，每隔2秒钟触发一次：
      */
-    private static Trigger getTrigger4() throws ParseException {
+    private static CronTrigger getTrigger4() throws ParseException {
         //定义一个任务触发器
         return newTrigger()
                 .withIdentity("job1", "group1")
@@ -108,7 +110,7 @@ public class QuartzTest {
     /**
      * 触发器，每天从的下午3:33 触发一次
      */
-    private static Trigger getTrigger5() throws ParseException {
+    private static CronTrigger getTrigger5() throws ParseException {
         //定义一个任务触发器
         return newTrigger()
                 .withIdentity("job1", "group1")
@@ -122,7 +124,7 @@ public class QuartzTest {
     /**
      * 触发器，每天从的下午3:33 触发一次
      */
-    private static Trigger getTrigger6() throws ParseException {
+    private static CronTrigger getTrigger6() throws ParseException {
         //定义一个任务触发器
         return newTrigger()
                 .withIdentity("job77", "group77")

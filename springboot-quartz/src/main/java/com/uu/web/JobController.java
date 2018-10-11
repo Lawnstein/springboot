@@ -83,7 +83,7 @@ public class JobController {
             CronTrigger cronTrigger = TriggerBuilder
                     .newTrigger()
                     .withSchedule(cronSchedule(cronExpression)
-                            .withMisfireHandlingInstructionDoNothing()
+                           .withMisfireHandlingInstructionDoNothing()
                     )
                     .withIdentity("测试-1-cronTrigger")
                     .build();
