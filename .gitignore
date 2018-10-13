@@ -11,3 +11,5 @@
 /dockercompose-springboot-mysql-nginx/app/dockercompose-springboot-mysql-nginx.iml
 /springboot-quartz/target/
 
+/springboot-logback/target/
+/springboot-logback/spring-boot-logback.iml
