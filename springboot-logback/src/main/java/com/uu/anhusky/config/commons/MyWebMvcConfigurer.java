@@ -1,4 +1,4 @@
-package io.ymq.logback.config.commons;
+package com.uu.anhusky.config.commons;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -21,7 +21,7 @@ public class MyWebMvcConfigurer extends WebMvcConfigurerAdapter {
          * addPathPatterns 用于添加拦截规则
          * excludePathPatterns 用于排除拦截
          */
-        registry.addInterceptor(new ControllerInterceptor()).addPathPatterns("/**");
+       // registry.addInterceptor(new ControllerInterceptor()).addPathPatterns("/**");
         super.addInterceptors(registry);
     }
 }

@@ -1,4 +1,4 @@
-package io.ymq.logback.config.annotation;
+package com.uu.anhusky.config.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
  */
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Log {
+public @interface ControllerLog {
 
     /**
      * 说明信息
@@ -18,11 +18,4 @@ public @interface Log {
      * @return
      */
     String value() default "";
-
-    /**
-     * 是否忽略
-     *
-     * @return
-     */
-    boolean ignore() default false;
 }

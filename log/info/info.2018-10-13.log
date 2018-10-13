@@ -1,0 +1,440 @@
+15:34:41.941 sms [main] INFO  Startup - Starting Startup on xiaogege with PID 2003 (/work/idea/idea_mime/springboot/springboot-logback/target/classes started by xiaogege in /work/idea/idea_mime/springboot)
+15:34:41.942 sms [main] INFO  Startup - No active profile set, falling back to default profiles: default
+15:34:42.289 sms [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65d6b83b: startup date [Sat Oct 13 15:34:42 CST 2018]; root of context hierarchy
+15:34:45.456 sms [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+15:34:46.296 sms [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+15:34:47.179 sms [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:34:47.179 sms [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+15:34:47.311 sms [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:34:47.311 sms [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5022 ms
+15:34:47.514 sms [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+15:34:47.519 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+15:34:47.519 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+15:34:47.520 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+15:34:47.520 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+15:34:47.937 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65d6b83b: startup date [Sat Oct 13 15:34:42 CST 2018]; root of context hierarchy
+15:34:48.034 sms [main] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 开始调用--> MyWebMvcConfigurer#addInterceptors 参数:[{}]
+15:34:48.036 sms [main] INFO  i.y.logback.config.commons.LogAspect - 
+ 调用结束<-- MyWebMvcConfigurer#addInterceptors 返回值:null 耗时:2ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:34:48.057 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.String io.ymq.logback.controller.IndexController.index(java.lang.String)
+15:34:48.060 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+15:34:48.060 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+15:34:48.158 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:34:48.158 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:34:48.193 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:34:48.428 sms [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+15:34:48.464 sms [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+15:34:48.487 sms [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+15:34:48.517 sms [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+15:34:48.533 sms [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+15:34:48.537 sms [main] INFO  Startup - Started Startup in 7.059 seconds (JVM running for 8.192)
+15:35:06.060 sms [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+15:35:06.060 sms [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+15:35:06.084 sms [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+15:35:06.101 sms [http-nio-8080-exec-1] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:01E6DCDF8B6441F9A1AD9937C6185104
+15:35:06.114 sms [http-nio-8080-exec-1] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:35:06.121 sms [http-nio-8080-exec-1] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:35:06.121 sms [http-nio-8080-exec-1] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:35:06.120,content:\"我是测试内容\"" 耗时:7ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:35:06.134 sms [http-nio-8080-exec-1] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:35:06.134 sms [http-nio-8080-exec-1] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:37:44.686 sms [Thread-17] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65d6b83b: startup date [Sat Oct 13 15:34:42 CST 2018]; root of context hierarchy
+15:37:44.690 sms [Thread-17] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+15:37:53.048 sms [main] INFO  Startup - Starting Startup on xiaogege with PID 2027 (/work/idea/idea_mime/springboot/springboot-logback/target/classes started by xiaogege in /work/idea/idea_mime/springboot)
+15:37:53.049 sms [main] INFO  Startup - No active profile set, falling back to default profiles: default
+15:37:53.298 sms [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65d6b83b: startup date [Sat Oct 13 15:37:53 CST 2018]; root of context hierarchy
+15:37:56.611 sms [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+15:37:57.339 sms [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+15:37:58.303 sms [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:37:58.304 sms [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+15:37:58.452 sms [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:37:58.453 sms [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5154 ms
+15:37:58.692 sms [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+15:37:58.696 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+15:37:58.697 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+15:37:58.697 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+15:37:58.697 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+15:37:59.207 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65d6b83b: startup date [Sat Oct 13 15:37:53 CST 2018]; root of context hierarchy
+15:37:59.296 sms [main] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 开始调用--> MyWebMvcConfigurer#addInterceptors 参数:[{}]
+15:37:59.298 sms [main] INFO  i.y.logback.config.commons.LogAspect - 
+ 调用结束<-- MyWebMvcConfigurer#addInterceptors 返回值:null 耗时:2ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:37:59.324 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.String io.ymq.logback.controller.IndexController.index(java.lang.String)
+15:37:59.328 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+15:37:59.328 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+15:37:59.527 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:37:59.528 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:37:59.615 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:38:00.095 sms [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+15:38:00.146 sms [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+15:38:00.183 sms [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+15:38:00.212 sms [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+15:38:00.229 sms [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+15:38:00.233 sms [main] INFO  Startup - Started Startup in 8.049 seconds (JVM running for 9.209)
+15:38:09.129 sms [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+15:38:09.129 sms [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+15:38:09.148 sms [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+15:38:09.163 sms [http-nio-8080-exec-1] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:28F966820A3A4F81894159A94AA2DD6D
+15:38:09.175 sms [http-nio-8080-exec-1] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:09.181 sms [http-nio-8080-exec-1] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:09.181 sms [http-nio-8080-exec-1] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:09.181,content:\"我是测试内容\"" 耗时:6ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:09.194 sms [http-nio-8080-exec-1] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:09.194 sms [http-nio-8080-exec-1] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:30.771 sms [http-nio-8080-exec-4] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:F75A425F8DB14ABAA91D106147D82283
+15:38:30.773 sms [http-nio-8080-exec-4] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:30.773 sms [http-nio-8080-exec-4] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:30.774 sms [http-nio-8080-exec-4] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:30.773,content:\"我是测试内容\"" 耗时:1ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:30.779 sms [http-nio-8080-exec-4] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:30.780 sms [http-nio-8080-exec-4] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:31.158 sms [http-nio-8080-exec-6] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:D3DB6ED94CA246D5A17B53B043B374E0
+15:38:31.159 sms [http-nio-8080-exec-6] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:31.160 sms [http-nio-8080-exec-6] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:31.160 sms [http-nio-8080-exec-6] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:31.160,content:\"我是测试内容\"" 耗时:0ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:31.162 sms [http-nio-8080-exec-6] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:31.162 sms [http-nio-8080-exec-6] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:31.398 sms [http-nio-8080-exec-8] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:90DC29BDBF01495AB0E8D4E7DEEBED0C
+15:38:31.401 sms [http-nio-8080-exec-8] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:31.401 sms [http-nio-8080-exec-8] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:31.401 sms [http-nio-8080-exec-8] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:31.401,content:\"我是测试内容\"" 耗时:0ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:31.406 sms [http-nio-8080-exec-8] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:31.406 sms [http-nio-8080-exec-8] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:31.658 sms [http-nio-8080-exec-10] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:EA3625BA893C4026914FCA6A2DCA12CC
+15:38:31.663 sms [http-nio-8080-exec-10] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:31.664 sms [http-nio-8080-exec-10] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:31.664 sms [http-nio-8080-exec-10] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:31.663,content:\"我是测试内容\"" 耗时:1ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:31.666 sms [http-nio-8080-exec-10] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:31.666 sms [http-nio-8080-exec-10] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:31.836 sms [http-nio-8080-exec-2] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:D1B651CB9ABB42DC864DF3512114B4DF
+15:38:31.838 sms [http-nio-8080-exec-2] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:31.838 sms [http-nio-8080-exec-2] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:31.838 sms [http-nio-8080-exec-2] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:31.838,content:\"我是测试内容\"" 耗时:0ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:31.839 sms [http-nio-8080-exec-2] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:31.839 sms [http-nio-8080-exec-2] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:32.010 sms [http-nio-8080-exec-4] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:5CD2B4FDD85844D8B6F1EBB499936180
+15:38:32.012 sms [http-nio-8080-exec-4] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:32.012 sms [http-nio-8080-exec-4] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:32.012 sms [http-nio-8080-exec-4] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:32.012,content:\"我是测试内容\"" 耗时:0ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:32.013 sms [http-nio-8080-exec-4] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:32.013 sms [http-nio-8080-exec-4] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:32.199 sms [http-nio-8080-exec-6] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:4112344100E2437EA56895E739B219EB
+15:38:32.200 sms [http-nio-8080-exec-6] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:32.200 sms [http-nio-8080-exec-6] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:32.200 sms [http-nio-8080-exec-6] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:32.200,content:\"我是测试内容\"" 耗时:0ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:32.204 sms [http-nio-8080-exec-6] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:32.205 sms [http-nio-8080-exec-6] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:32.345 sms [http-nio-8080-exec-8] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:D124D96A0E3E44D6BBE3E149904E6D0E
+15:38:32.346 sms [http-nio-8080-exec-8] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:32.346 sms [http-nio-8080-exec-8] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:32.346 sms [http-nio-8080-exec-8] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:32.346,content:\"我是测试内容\"" 耗时:0ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:32.348 sms [http-nio-8080-exec-8] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:32.348 sms [http-nio-8080-exec-8] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:32.521 sms [http-nio-8080-exec-10] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:E48A8213C30D457BA74A2BB3B58305EF
+15:38:32.522 sms [http-nio-8080-exec-10] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:32.522 sms [http-nio-8080-exec-10] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:32.522 sms [http-nio-8080-exec-10] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:32.522,content:\"我是测试内容\"" 耗时:0ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:32.527 sms [http-nio-8080-exec-10] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:32.527 sms [http-nio-8080-exec-10] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:32.689 sms [http-nio-8080-exec-2] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:DEB244EBB81342D2A810E24D00A1250A
+15:38:32.691 sms [http-nio-8080-exec-2] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:32.691 sms [http-nio-8080-exec-2] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:32.691 sms [http-nio-8080-exec-2] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:32.691,content:\"我是测试内容\"" 耗时:0ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:32.693 sms [http-nio-8080-exec-2] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:32.693 sms [http-nio-8080-exec-2] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:32.836 sms [http-nio-8080-exec-4] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:5B763407CD6E4A91A45B9EFA19869DD1
+15:38:32.838 sms [http-nio-8080-exec-4] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:32.838 sms [http-nio-8080-exec-4] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:32.838 sms [http-nio-8080-exec-4] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:32.838,content:\"我是测试内容\"" 耗时:0ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:32.839 sms [http-nio-8080-exec-4] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:32.839 sms [http-nio-8080-exec-4] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:33.148 sms [http-nio-8080-exec-6] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:F5942EFF83BC421B85CEB5313D886CA1
+15:38:33.149 sms [http-nio-8080-exec-6] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:33.150 sms [http-nio-8080-exec-6] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:33.150 sms [http-nio-8080-exec-6] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:33.150,content:\"我是测试内容\"" 耗时:0ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:33.151 sms [http-nio-8080-exec-6] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:33.151 sms [http-nio-8080-exec-6] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:33.324 sms [http-nio-8080-exec-8] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:2369E85C8B534448BEA56833DAA8A264
+15:38:33.326 sms [http-nio-8080-exec-8] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:33.327 sms [http-nio-8080-exec-8] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:33.327 sms [http-nio-8080-exec-8] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:33.327,content:\"我是测试内容\"" 耗时:0ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:33.329 sms [http-nio-8080-exec-8] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:33.330 sms [http-nio-8080-exec-8] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:33.498 sms [http-nio-8080-exec-10] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:A09D0800DAA6411F83850B72F9202D81
+15:38:33.501 sms [http-nio-8080-exec-10] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:33.501 sms [http-nio-8080-exec-10] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:33.503 sms [http-nio-8080-exec-10] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:33.501,content:\"我是测试内容\"" 耗时:2ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:33.507 sms [http-nio-8080-exec-10] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:33.509 sms [http-nio-8080-exec-10] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:33.666 sms [http-nio-8080-exec-2] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:DB24969E331544F3B433B12D127B02DF
+15:38:33.667 sms [http-nio-8080-exec-2] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:33.667 sms [http-nio-8080-exec-2] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:33.668 sms [http-nio-8080-exec-2] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:33.667,content:\"我是测试内容\"" 耗时:0ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:33.669 sms [http-nio-8080-exec-2] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:33.669 sms [http-nio-8080-exec-2] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:33.835 sms [http-nio-8080-exec-4] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:DA87C987AEB4404F89676D48198F408E
+15:38:33.836 sms [http-nio-8080-exec-4] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:38:33.836 sms [http-nio-8080-exec-4] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:38:33.836 sms [http-nio-8080-exec-4] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:38:33.836,content:\"我是测试内容\"" 耗时:0ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:33.837 sms [http-nio-8080-exec-4] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:38:33.837 sms [http-nio-8080-exec-4] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:38:39.700 sms [Thread-19] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65d6b83b: startup date [Sat Oct 13 15:37:53 CST 2018]; root of context hierarchy
+15:38:39.703 sms [Thread-19] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+15:38:44.113 sms [main] INFO  Startup - Starting Startup on xiaogege with PID 2037 (/work/idea/idea_mime/springboot/springboot-logback/target/classes started by xiaogege in /work/idea/idea_mime/springboot)
+15:38:44.114 sms [main] INFO  Startup - No active profile set, falling back to default profiles: default
+15:38:44.215 sms [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65d6b83b: startup date [Sat Oct 13 15:38:44 CST 2018]; root of context hierarchy
+15:38:47.702 sms [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+15:38:48.675 sms [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+15:38:49.605 sms [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:38:49.610 sms [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+15:38:49.784 sms [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:38:49.785 sms [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5570 ms
+15:38:50.097 sms [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+15:38:50.108 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+15:38:50.108 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+15:38:50.108 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+15:38:50.108 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+15:38:50.554 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65d6b83b: startup date [Sat Oct 13 15:38:44 CST 2018]; root of context hierarchy
+15:38:50.664 sms [main] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 开始调用--> MyWebMvcConfigurer#addInterceptors 参数:[{}]
+15:38:50.666 sms [main] INFO  i.y.logback.config.commons.LogAspect - 
+ 调用结束<-- MyWebMvcConfigurer#addInterceptors 返回值:null 耗时:2ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:38:50.697 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.String io.ymq.logback.controller.IndexController.index(java.lang.String)
+15:38:50.700 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+15:38:50.700 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+15:38:50.752 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:38:50.753 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:38:50.810 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:38:51.104 sms [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+15:38:51.132 sms [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+15:38:51.146 sms [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+15:38:51.172 sms [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+15:38:51.186 sms [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+15:38:51.191 sms [main] INFO  Startup - Started Startup in 7.51 seconds (JVM running for 8.659)
+15:39:26.989 sms [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+15:39:26.990 sms [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+15:39:27.027 sms [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+15:39:27.056 sms [http-nio-8080-exec-1] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:3801A44C6B294CD399BA559A01532829
+15:39:27.082 sms [http-nio-8080-exec-1] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+首页IndexController 开始调用--> io.ymq.logback.controller.IndexController#index 参数:["\"我是测试内容\""]
+15:39:27.106 sms [http-nio-8080-exec-1] INFO  i.y.l.controller.IndexController - 请求参数：content:"我是测试内容"
+15:39:27.106 sms [http-nio-8080-exec-1] INFO  i.y.logback.config.commons.LogAspect - 
+首页IndexController 调用结束<-- io.ymq.logback.controller.IndexController#index 返回值:"2018-10-13T15:39:27.105,content:\"我是测试内容\"" 耗时:24ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:39:27.135 sms [http-nio-8080-exec-1] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+15:39:27.136 sms [http-nio-8080-exec-1] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+15:41:06.950 sms [Thread-18] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65d6b83b: startup date [Sat Oct 13 15:38:44 CST 2018]; root of context hierarchy
+15:41:06.954 sms [Thread-18] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+15:41:11.237 sms [main] INFO  Startup - Starting Startup on xiaogege with PID 2047 (/work/idea/idea_mime/springboot/springboot-logback/target/classes started by xiaogege in /work/idea/idea_mime/springboot)
+15:41:11.240 sms [main] INFO  Startup - No active profile set, falling back to default profiles: default
+15:41:11.330 sms [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222114ba: startup date [Sat Oct 13 15:41:11 CST 2018]; root of context hierarchy
+15:41:11.538 sms [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+15:41:13.258 sms [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+15:41:13.267 sms [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:41:13.268 sms [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+15:41:13.334 sms [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:41:13.334 sms [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2004 ms
+15:41:13.527 sms [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+15:41:13.531 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+15:41:13.531 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+15:41:13.531 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+15:41:13.531 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+15:41:13.997 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222114ba: startup date [Sat Oct 13 15:41:11 CST 2018]; root of context hierarchy
+15:41:14.071 sms [main] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 开始调用--> MyWebMvcConfigurer#addInterceptors 参数:[{}]
+15:41:14.073 sms [main] INFO  i.y.logback.config.commons.LogAspect - 
+ 调用结束<-- MyWebMvcConfigurer#addInterceptors 返回值:null 耗时:2ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:41:14.092 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.String io.ymq.logback.controller.IndexController.index(java.lang.String)
+15:41:14.095 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+15:41:14.096 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+15:41:14.131 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:41:14.132 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:41:14.163 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:41:14.326 sms [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+15:41:14.345 sms [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+15:41:14.350 sms [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+15:41:14.374 sms [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+15:41:14.390 sms [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+15:41:14.395 sms [main] INFO  Startup - Started Startup in 3.601 seconds (JVM running for 4.515)
+15:58:28.299 sms [Thread-10] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222114ba: startup date [Sat Oct 13 15:41:11 CST 2018]; root of context hierarchy
+15:58:28.328 sms [Thread-10] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+15:58:40.197 sms [main] INFO  Startup - Starting Startup on xiaogege with PID 2111 (/work/idea/idea_mime/springboot/springboot-logback/target/classes started by xiaogege in /work/idea/idea_mime/springboot)
+15:58:40.204 sms [main] INFO  Startup - No active profile set, falling back to default profiles: default
+15:58:40.321 sms [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@59cba5a: startup date [Sat Oct 13 15:58:40 CST 2018]; root of context hierarchy
+15:58:40.393 sms [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+15:58:41.889 sms [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+15:58:41.898 sms [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:58:41.899 sms [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+15:58:41.969 sms [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:58:41.970 sms [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1649 ms
+15:58:42.123 sms [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+15:58:42.127 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+15:58:42.128 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+15:58:42.128 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+15:58:42.128 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+15:58:42.632 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@59cba5a: startup date [Sat Oct 13 15:58:40 CST 2018]; root of context hierarchy
+15:58:42.762 sms [main] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 开始调用--> MyWebMvcConfigurer#addInterceptors 参数:[{}]
+15:58:42.765 sms [main] INFO  i.y.logback.config.commons.LogAspect - 
+ 调用结束<-- MyWebMvcConfigurer#addInterceptors 返回值:null 耗时:3ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+15:58:42.805 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.String io.ymq.logback.controller.IndexController.index(java.lang.String)
+15:58:42.810 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+15:58:42.810 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+15:58:42.963 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:58:42.963 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:58:43.008 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:58:43.216 sms [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+15:58:43.233 sms [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+15:58:43.241 sms [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+15:58:43.270 sms [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+15:58:43.286 sms [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+15:58:43.291 sms [main] INFO  Startup - Started Startup in 3.908 seconds (JVM running for 6.525)
+16:05:36.215 sms [Thread-12] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@59cba5a: startup date [Sat Oct 13 15:58:40 CST 2018]; root of context hierarchy
+16:05:36.248 sms [Thread-12] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+16:18:13.858 sms [main] INFO  Startup - Starting Startup on xiaogege with PID 2250 (/work/idea/idea_mime/springboot/springboot-logback/target/classes started by xiaogege in /work/idea/idea_mime/springboot)
+16:18:13.876 sms [main] INFO  Startup - No active profile set, falling back to default profiles: default
+16:18:13.975 sms [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222114ba: startup date [Sat Oct 13 16:18:13 CST 2018]; root of context hierarchy
+16:18:14.106 sms [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+16:18:16.226 sms [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+16:18:16.239 sms [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:18:16.240 sms [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+16:18:16.334 sms [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:18:16.334 sms [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2360 ms
+16:18:16.543 sms [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+16:18:16.547 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:18:16.548 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:18:16.548 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:18:16.548 sms [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:18:17.042 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222114ba: startup date [Sat Oct 13 16:18:13 CST 2018]; root of context hierarchy
+16:18:17.180 sms [main] INFO  i.y.logback.config.commons.LogAspect - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 开始调用--> MyWebMvcConfigurer#addInterceptors 参数:[{}]
+16:18:17.183 sms [main] INFO  i.y.logback.config.commons.LogAspect - 
+ 调用结束<-- MyWebMvcConfigurer#addInterceptors 返回值:null 耗时:3ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+16:18:17.210 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String UserController.login(java.lang.String,java.lang.String)
+16:18:17.213 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16:18:17.214 sms [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16:18:17.252 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:18:17.252 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:18:17.374 sms [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:18:17.510 sms [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+16:18:17.525 sms [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:18:17.531 sms [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:18:17.554 sms [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:18:17.569 sms [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+16:18:17.574 sms [main] INFO  Startup - Started Startup in 4.429 seconds (JVM running for 5.504)
+16:18:56.610 sms [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:18:56.611 sms [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+16:18:56.630 sms [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+16:18:56.656 sms [http-nio-8080-exec-1] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor preHandle 在请求处理之前生成 logback requestUUID:CB2F646A59DE4250BF115CB5235CABD2
+16:18:56.673 sms [http-nio-8080-exec-1] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor postHandle 请求处理之后清除 logback MDC requestUUID
+16:18:56.691 sms [http-nio-8080-exec-1] INFO  i.y.l.c.c.ControllerInterceptor - ControllerInterceptor afterCompletion 整个请求处理完毕清除 logback MDC requestUUID
+16:19:11.648 sms [Thread-12] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222114ba: startup date [Sat Oct 13 16:18:13 CST 2018]; root of context hierarchy
+16:19:11.651 sms [Thread-12] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
