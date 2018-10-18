@@ -44,7 +44,7 @@ public class MongoDbTemplate {
      * 简单查询,单个（主键）查询
      */
     @Test
-    public void findOne() {
+    public void  findOne() {
         // 由此证明，OBjectId 直接传String 也可以
         User user = mongoTemplate.findById("5b67fb40986bf621e99a05be", User.class);
 
