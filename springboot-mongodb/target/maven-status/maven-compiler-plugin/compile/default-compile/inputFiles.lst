@@ -1,0 +1,8 @@
+/work/idea/idea_mime/springboot/springboot-mongodb/src/main/java/com/uu/husky/ApplicationContext.java
+/work/idea/idea_mime/springboot/springboot-mongodb/src/main/java/com/uu/husky/entity/Manager.java
+/work/idea/idea_mime/springboot/springboot-mongodb/src/main/java/com/uu/husky/dao/UserDao.java
+/work/idea/idea_mime/springboot/springboot-mongodb/src/main/java/com/uu/husky/config/MongoConfig.java
+/work/idea/idea_mime/springboot/springboot-mongodb/src/main/java/com/uu/husky/entity/School.java
+/work/idea/idea_mime/springboot/springboot-mongodb/src/main/java/com/uu/husky/entity/Subject.java
+/work/idea/idea_mime/springboot/springboot-mongodb/src/main/java/com/uu/husky/entity/User.java
+/work/idea/idea_mime/springboot/springboot-mongodb/src/main/java/com/uu/husky/controller/UserController.java

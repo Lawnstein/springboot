@@ -14,7 +14,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.util.concurrent.ListenableFuture;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Future;
 import java.util.stream.Stream;
@@ -103,7 +102,7 @@ public interface UserDao extends CrudRepository<User, String>, MongoRepository<U
      * @param lastName
      * @return
      */
-    Optional<User> findByLastName(String lastName);
+   /* Optional<User> findByLastName(String lastName);*/
 
     /**
      * 没啥用----- 无法去重（不会用）
