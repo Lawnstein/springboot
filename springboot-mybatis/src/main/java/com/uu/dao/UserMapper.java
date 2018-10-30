@@ -1,6 +1,6 @@
 package com.uu.dao;
 
-import com.uu.domain.User;
+import com.uu.model.User;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.type.JdbcType;
 import org.springframework.stereotype.Repository;
