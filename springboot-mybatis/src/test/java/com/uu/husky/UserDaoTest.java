@@ -2,7 +2,7 @@ package com.uu.husky;
 
 import com.uu.ApplicationStart;
 import com.uu.dao.UserMapper;
-import com.uu.domain.User;
+import com.uu.model.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,11 +28,11 @@ public class UserDaoTest {
     @Test
     public void testInsert() {
         User user = new User();
-        user.setAges(11);
+        user.setAges(1);
         user.setPassword("不知道1");
 
         User user1 = new User();
-        user1.setAges(11);
+        user1.setAges(1);
         user1.setPassword("不知道1");
 
 

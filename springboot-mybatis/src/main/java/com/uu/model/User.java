@@ -9,4 +9,7 @@ import lombok.Data;
  **/
 @Data
 public class User {
+    private Integer ages;
+    private String password;
+    private Integer id;
 }

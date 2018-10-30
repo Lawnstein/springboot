@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @create 2018-04-01 22:41
  **/
 @SpringBootApplication
-@MapperScan("com.uu")
+@MapperScan("com.uu.dao")
 public class ApplicationStart {
 
    public static void main(String[] args) {

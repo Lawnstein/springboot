@@ -1,6 +1,6 @@
 package com.uu.husky;
 
-import com.uu.domain.User;
+import com.uu.model.User;
 import org.junit.Test;
 
 import java.lang.reflect.Field;
