@@ -8,8 +8,8 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>jxmis</name>
-    <description>极致驾服云驾校</description>
+    <name>husky</name>
+    <description>小哥哥</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

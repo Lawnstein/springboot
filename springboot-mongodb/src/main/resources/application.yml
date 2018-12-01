@@ -5,8 +5,5 @@ spring:
     mongodb:
       host: 139.199.32.78
       port: 27017
-      database: test
-      username: test
-      password: husky
 
 
