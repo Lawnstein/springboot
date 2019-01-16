@@ -1,5 +1,4 @@
 package com.uu.husky;
-
 import com.mongodb.BasicDBObject;
 import com.mongodb.client.result.UpdateResult;
 import com.uu.husky.domain.User;
@@ -37,6 +36,21 @@ import static org.springframework.data.mongodb.core.aggregation.Aggregation.*;
 public class MongoDbTemplate {
     @Autowired
     private MongoTemplate mongoTemplate;
+
+
+    @Test
+    public void insert(){
+        User user = new User();
+        user.setId(new ObjectId());
+        user.setFirstName(" springboot -insert ");
+        user.setLastName("1");
+        user.setAge(0);
+        user.setSchoolId(new ObjectId());
+        user.setProvince("1");
+        user.setName("1");
+        mongoTemplate.insert(user);
+
+    }
 
     //--------------------------------------------查询 start----------------------------------------------
 
